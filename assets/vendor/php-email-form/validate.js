@@ -61,7 +61,6 @@
       if( response.ok ) {
         return response.text()
       } else {
-		cnso
         throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
       }
     })
