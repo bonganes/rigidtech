@@ -15,6 +15,8 @@
     die( 'Unable to load the "PHP Email Form" Library!');
   }
 
+  echo 'Bongane here';
+
   $contact = new PHP_Email_Form;
   $contact->ajax = true;
   
