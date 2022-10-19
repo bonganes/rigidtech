@@ -52,9 +52,9 @@
   });
 
   function php_email_form_submit(thisForm, action, formData) {
-    console.log(thisForm);
-    console.log(action);
-    console.log(formData);
+    console.log("form name:" + thisForm);
+    console.log("form action:" + action);
+    console.log("form data:" + formData);
   }
 
   function displayError(thisForm, error) {
