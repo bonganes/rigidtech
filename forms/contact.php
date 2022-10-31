@@ -14,6 +14,5 @@
    $mail->from_email = $_POST['email'];
    $mail->subject = $_POST['subject'];
       
-   echo "Successfully came in here";
    echo "OK";
 ?>
