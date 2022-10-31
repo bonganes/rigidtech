@@ -7,7 +7,7 @@
     die( 'Unable to load the "PHP Email Form" Library!');
   }
 
-  $contact = new PHP_Email_Form;
+  $contact = new PHP_Email_Form();
   
   $contact->to = $receiving_email_address;
   $contact->from_name = $_POST['name'];
