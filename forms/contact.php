@@ -13,8 +13,4 @@
   $contact->from_name = $_POST['name'];
   $contact->from_email = $_POST['email'];
   $contact->subject = $_POST['subject'];
-
-  $contact->add_message( $_POST['message'], 10);
-
-  echo $contact->send();
 ?>
