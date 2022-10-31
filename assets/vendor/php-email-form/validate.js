@@ -53,6 +53,7 @@
     
     fetch(action)
     .then(response => {
+      alert(response.ok);
       if( response.ok ) {
         return response.text()
       } else {
