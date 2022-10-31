@@ -15,4 +15,5 @@
    $mail->subject = $_POST['subject'];
       
    echo "Successfully came in here";
+   echo "OK";
 ?>
