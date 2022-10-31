@@ -66,7 +66,7 @@
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
       
-      console.log("Response status : " + data.trim());
+      console.log("Data : " + data.trim());
       
       if (data.trim() == 'OK') {
         thisForm.querySelector('.sent-message').classList.add('d-block');
