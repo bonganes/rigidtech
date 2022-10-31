@@ -56,3 +56,4 @@ if(isset($_POST['submit'])){
         $statusMsg = '<p>Please fill all the mandatory fields:</p>'.trim($valErr, '<br/>'); 
     } 
 }
+?>
