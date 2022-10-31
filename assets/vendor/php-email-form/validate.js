@@ -68,7 +68,7 @@
       
       console.log("Data : " + data.trim());
       
-      if (data.trim() != 'OK') {
+      if (data.trim() == 'OK') {
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset(); 
       } else {
