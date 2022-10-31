@@ -24,6 +24,8 @@
 
       let formData = new FormData( thisForm );
 
+      console.log("Recaptcha --- : " + recaptcha);
+      
       if ( recaptcha ) {
         if(typeof grecaptcha !== "undefined" ) {
           grecaptcha.ready(function() {
@@ -41,6 +43,7 @@
           displayError(thisForm, 'The reCaptcha javascript API url is not loaded!')
         }
       } else {
+        console.log("---  Running php_email_form_submit function --- ");
         php_email_form_submit(thisForm, action, formData);
       }
     });
