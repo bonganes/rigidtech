@@ -53,10 +53,11 @@
     
     fetch(action)
     .then(response => {
-      alert(response.ok);
+      console.log("Response status : " + response.ok);
       if( response.ok ) {
         return response.text()
       } else {
+        console(" --- Throwing Error 1 ---");
         throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
       }
     })
@@ -66,10 +67,12 @@
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset(); 
       } else {
+        console(" --- Throwing Error 2 ---");
         throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
       }
     })
     .catch((error) => {
+      console(" --- Throwing Error 3 ---");
       displayError(thisForm, 'Bongane Here');
     });
   }
