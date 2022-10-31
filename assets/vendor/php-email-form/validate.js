@@ -1,9 +1,4 @@
-/**
-* PHP Email Form Validation - v3.1
-* URL: https://bootstrapmade.com/php-email-form/
-* Author: BootstrapMade.com
-* Just made a change here
-*/
+
 (function () {
   "use strict";
 
@@ -74,7 +69,7 @@
       }
     })
     .catch((error) => {
-      displayError(thisForm, error);
+      displayError(thisForm, 'Bongane Here');
     });
   }
 
